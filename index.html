@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Etiquetas que influyen en el SEO -->
+    <meta name= "author" content= "Paola">
+    <meta name="description" content="Recopilatorio de etiquetas HTML">
+    <meta name="keywords" content="HTML, imágenes, desarrollo web, diseño web">
+
     <title>Catálogo de etiquetas HTML</title>
+    <link rel="stylesheet" href="IMG/favicon_www.ico" type="image/-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 <body>
+    <header>
+        <picture>
+            <source srcset="IMG/header_500.avif" media="(max-width: 500px)">
+            <source srcset="img/header_1100.avif" media="(max-width: 1100px)">
+            <img src="IMG/header_1920.jpg" alt="Ordenador para programar">
+
+        </picture>
+        <h1>Etiquetas HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="imagenes.html">Imágenes</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="semántica.html">Semántica</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+    </main>
+    <footer>
+        <p id="copyright">&copy; Paola</p>
+        <p> Curso <span>2024</span> </p>
+    </footer>
+<div>
+    <h1></h1>
+</div>
     <!--Soy un comentario-->
     <!-- 1- Etiquetas de texto    -->
     <!-- 1.1-Títulos  -->
@@ -17,7 +55,16 @@
         <!-- Estas son las etiquetas para poner títulos -->
         <!-- Atención no existe h7 -->
  
- <h1 id="título"> Soy un título h1 </h1>
+ <h1 id="título"
+ style="color: black"> Soy un título h1 </h1>
+ <style>
+    p{
+        color:white;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+ </style>
+<h1> Soy otro h1 </h1>
 <H2> Soy un h2</H2>
 <h3> Soy un h3</h3>
 <h4> Soy un h4</h4>
@@ -27,14 +74,15 @@
 <!-- 1.2-Párrafos  -->
 
 <p> Soy un párrafo</p>
-<p> Me gusta tomar un <strong>café con leche</strong>  por la </p>
-<small>mañana</small>
+<p> Me gusta tomar un <strong>café con leche</strong>  por la 
+<small>mañana</small></p>
 <!-- Superíndice sup  -->
 <p>La fórmula de la teoria de la relatividad es . e mc <sup>2</sup>2</p>
 <!-- Subíndice sub  -->
 <p> La fórmula del agua es H <sub>2</sub>o</p>
-Una frase famosa de <cite>Galileo </cite>fue
+<p>Una frase famosa de <cite>Galileo </cite>fue:</p>
 <blockquote> ... Sin embargo se mueve</blockquote>
+<p>ejemplo de cita corta: <cite>Sócrates</cite> dijo <q>Cónocete a ti mismo</q></p>
 
 <!-- 2 Listas  -->
 <!-- 2.1- Listas desordenadas  unordered lists -->
@@ -49,7 +97,7 @@ Una frase famosa de <cite>Galileo </cite>fue
 
 </ul>
 <h2> Países más contaminadores del mundo</h2>
-<ol type="1" 
+<ol type="1"></ol> 
 
 <Li>India</Li>
 <li>Estados Unidos</li>
@@ -116,12 +164,47 @@ img/1920.jpg 1920w,
 img/2400.jpg 2400w
 ">
 
+<picture>
+    <source srcset="IMG/2400.jpg"
+    media="(min-width: 650px)">
+    <source srcset="IMG/1200.jpg"
+    media="(min-width: 800px)">
+    <source srcset="IMG/1920.jpg"
+    media="(min-width: 650px)">
+    
+    <img src="IMG/640.jpg" alt="">
+</picture>
+
+
+
+
+
+
+
 <a href="https://google.es" target="_blank">Google</a>
 <a href="#título1"> Ir al principio</a>
 <a href=""></a>
 <a href="https://undraw.co/search">
     <img src="IMG/persona-sirviendo-taza-cafe.jpg" alt="" width="100">
 </a>
+<!-- Etiquetas para maquetar -->
+<div>Hola</div>
+<span>Hola</span>
+<span>Hola</span>
+<header></header>
+
+<header>
+    <h1></h1>
+    <nav></nav>
+</header>
+<main>
+    <section>
+        <article>
+
+        </article>
+    </section>
+    <aside></aside>
+</main>
 </body>
 
 </html>
